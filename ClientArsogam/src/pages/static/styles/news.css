@@ -1,0 +1,86 @@
+/*
+    Font Style
+*/
+@font-face {
+    font-family: "Bella";
+    src: url('../fonts/Bella.ttf');
+}
+
+.containerNewsSection{
+    background-image: url('../img/background.jpeg');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 300px;
+    padding-bottom: 8%;
+    padding-top: 8%;
+}
+
+.bullNews{
+    text-align: center;
+}
+
+.bullNews img{
+    width: 20%;
+}
+
+.containerImgTextNew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.containerImageNews{
+    width: 35%;
+    text-align: center;
+}
+
+.containerImageNews img{
+    width: 100%;
+}
+
+.containerTextNews{
+    width: 65%;
+    text-align: justify;
+}
+
+.containerImageNews h2{
+    font-family: 'Bella';
+    color: rgb(0, 101, 51);
+    text-align: center;
+    margin-top: -25px;
+    font-size: 2.3rem;
+}
+
+.containerTextNews p{
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 900px) {
+    .containerNewsSection{
+        padding: 50px;
+        background-image: url('../img/backgroundResponsive.jpeg');
+    }
+
+    .containerImgTextNew{
+        flex-direction: column;
+    }
+
+    .bullNews img{
+        width: 80%;
+    }
+
+    .containerImageNews{
+        width: 100%;
+    }
+
+    .containerTextNews{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .containerImageNews h2{
+        font-size: 1.6rem;
+    }    
+}

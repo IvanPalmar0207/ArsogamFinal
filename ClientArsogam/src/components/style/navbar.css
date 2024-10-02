@@ -1,0 +1,116 @@
+/*
+    Font Style
+*/
+@font-face {
+    font-family: "Bella";
+    src: url('../fonts/Bella.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.containerNavBar{
+    display: flex;
+    position: absolute;
+    width: 98%;
+    left: 2%;
+    top: 3%;
+}
+
+.containerImage img{
+    width: 500px;
+    height: 280px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 5px;
+    margin-left: 1%;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(60, 60, 59);
+}
+
+.navBar ul{
+    height: 30%;
+    background-color: rgb(60, 60, 59);
+}
+
+.navBar ul li{
+    display: inline-block;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+.linkNav{
+    font-size: 1.9rem;
+    text-decoration: none;
+    font-family: "Bella";
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    background-color: rgb(60, 60, 59);
+}
+
+.linkNav:hover{
+    transition: all ease-in 0.3s;
+    color:rgb(91, 184, 131);
+}
+
+@media (max-width:1800px) {
+    .navBar ul li{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:1500px) {
+    
+}
+
+@media (max-width : 1200px) {
+    .containerNavBar{
+        position: relative;
+        flex-direction: column;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        background-image: url('../img/background.jpeg');
+    }
+
+    .navBar{
+        margin-left: 0%;
+        border-bottom-left-radius: 0%;
+        display: block;
+        text-align: center;
+    }
+
+    .containerImage{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .containerImage img{
+        width: 80%;
+        height: 100%;
+    }
+
+    .linkNav{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .navBar ul li{
+        margin-left: 10px;
+    }
+}

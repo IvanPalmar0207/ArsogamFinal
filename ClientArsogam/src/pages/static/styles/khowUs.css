@@ -1,0 +1,71 @@
+/*
+    Font Style
+*/
+@font-face {
+    font-family: "Bella";
+    src: url('../fonts/Bella.ttf');
+}
+
+.sectionKhowUs{
+    background-image: url('../img/background.jpeg');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 250px;
+    padding-bottom: 100px;
+    padding-top: 8%;
+}
+
+.containerKhowUsLogo{
+    text-align: center;
+}
+
+.containerKhowUsLogo img{
+    width: 20%;
+}
+
+.infoKhowUs{
+    margin-top: 40px;
+}
+
+.infoKhowUs h2{
+    color: rgb(0, 101, 51);
+    font-family: "Bella";
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.infoKhowUs p{
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width:1800px) {
+    .sectionKhowUs{
+        padding-top: 15%;
+        background-image: url('../img/backgroundResponsive.jpeg');
+    }
+}
+
+@media (max-width:900px) {
+    .sectionKhowUs{
+        padding: 50px;
+    }
+
+    .containerKhowUsLogo img{
+        width: 70%;
+    }
+
+    .infoKhowUs{
+        margin-top: 70px;
+    }
+
+    .infoKhowUs h2{
+        font-size: 1.8rem;
+    }
+
+    .infoKhowUs p{
+        font-size: 0.9rem;
+    }
+}

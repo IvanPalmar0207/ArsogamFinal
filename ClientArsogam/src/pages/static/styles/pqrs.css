@@ -1,0 +1,29 @@
+.containerPQRS{
+    background-image: url('../img/background.jpeg');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 300px;
+    padding-bottom: 8%;
+    padding-top: 8%;
+}
+
+.containerBullPqrs{
+    text-align: center;
+}
+
+.containerBullPqrs img{
+    width: 18%;
+}
+
+.containerInfoPQRS{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.containerTextPQRS p{
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
