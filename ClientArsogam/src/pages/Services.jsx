@@ -93,7 +93,6 @@ function Services(){
                                 opacity : 1, scale : 1
                             }}
                             transition={{
-                                ease : 'linear',
                                 duration : 5,
                                 ease : [0, 0.71, 0.2, 1.01],
                                 scale : {
@@ -132,7 +131,6 @@ function Services(){
                                 opacity : 1, scale : 1
                             }}
                             transition={{
-                                ease : 'linear',
                                 duration : 5,
                                 ease : [0, 0.71, 0.2, 1.01],
                                 scale : {

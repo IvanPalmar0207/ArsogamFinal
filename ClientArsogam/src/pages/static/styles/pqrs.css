@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Bella';
+    src: url('../fonts/Bella.ttf');
+}
+
 .containerPQRS{
     background-image: url('../img/background.jpeg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 300px;
-    padding-bottom: 8%;
+    padding-bottom: 6%;    
     padding-top: 8%;
 }
 
@@ -16,14 +22,55 @@
 }
 
 .containerInfoPQRS{
+    margin-top: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
+    width: 100%;
+    gap: 100px;
+}
+
+.containerTextPQRS{
+    width: 70%;
+}
+
+.containerTextPQRS span{
+    color: rgb(0, 101, 51);
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .containerTextPQRS p{
-    font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: justify;
+    color: black;
+    font-weight: 700;
+}
+
+.containerFormPqr{
+    background: rgb(91, 184, 131);
+    margin-top: 30px;
+    border-radius: 40px;
+}
+
+@media (max-width:900px) {
+    .containerPQRS{
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .containerBullPqrs img{
+        width: 50%;
+    }
+
+    .containerInfoPQRS{
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .containerTextPQRS{
+        width: 100%;
+        text-align: justify;
+    }
 }

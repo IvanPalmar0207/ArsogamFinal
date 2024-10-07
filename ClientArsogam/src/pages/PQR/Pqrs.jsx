@@ -35,38 +35,37 @@ function Pqrs(){
             <div className="containerInfoPQRS">
                 <div className="containerTextPQRS">
                     <p>
-                        ¿Qué es una petición?
+                        <span>¿Qué es una petición?</span>
                         <br />
                         Es el requerimiento que se realiza en nombre propio, apoderado, representante o entidad para solicitar el reconocimiento de un derecho, la prestación de un servicio, pedir información, documentos o copias, formular consultas y obtener respuesta oportuna y de fondo.
                         <br />
                         <br />
-                        ¿Qué es una queja?
+                        <span>¿Qué es una queja?</span>
                         <br />
                         Es la manifestación de desacuerdo, insatisfacción o descontento al recibir una atención inadecuada por parte de un servidor público.
                         <br />
                         <br />
-                        ¿Qué es un reclamo?
+                        <span>¿Qué es un reclamo?</span>
                         <br />
                         Es la exigencia ante la ausencia o indebida prestación de un servicio o la falta de atención de una petición.
                         <br />
                         <br />
-                        ¿Qué es una denuncia?
+                        <span>¿Qué es una denuncia?</span>
                         <br />
                         Es dar a conocer un acto sospechoso, posible hecho de corrupción o riesgo de fraude que esté realizando una persona a nombre de la entidad o dentro de ella.
                         <br />
                         <br />
-                        ¿Qué es una sugerencia?
+                        <span>¿Qué es una sugerencia?</span>
                         <br />
                         Es la manifestación de una propuesta para plantear un cambio o mejora de un servicio, trámite o proceso.
                         <br />
                         <br />
-                        ¿Qué es una felicitación o agradecimiento?
-                        <br />
-                        <br />
+                        <span>¿Qué es una felicitación o agradecimiento?</span>
+                        <br />                        
                         Es la manifestación positiva o de gratitud frente al servicio o gestión de la entidad.
                     </p>
                 </div>
-                <div>
+                <div className="containerFormPqr">
                     <FormPQR />
                 </div>
             </div>

@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 //MaterialIU
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
+import Swal from 'sweetalert2'
 //Form Method
 import { postTecnicAssistance } from '../api/sendEmail';
 
@@ -21,9 +22,9 @@ function FormTecnicAssis(){
             ...data
         }        
         
-        postTecnicAssistance(validData)
-        refreshPage()
-        
+        postTecnicAssistance(validData)        
+        refreshPage()    
+
     })
 
     return(
@@ -42,7 +43,7 @@ function FormTecnicAssis(){
                 />                            
 
                 {
-                    errors.fullName && <Alert severity="error">El nombre completo debe de tener mas de 8 caracteres</Alert>
+                    errors.fullName && <Alert severity="error">El nombre completo debe de tener más de 8 caracteres</Alert>
                 }   
 
                 <br />
@@ -54,7 +55,7 @@ function FormTecnicAssis(){
                 />
 
                 {
-                    errors.phoneUser && <Alert severity="error">El numero de telefono debe de tener 10 digitos</Alert>
+                    errors.phoneUser && <Alert severity="error">El número de telefono debe de tener 10 digitos</Alert>
                 }
 
                 <br />

@@ -6,6 +6,17 @@ import logoArsogam from './img/logoArsogam.png'
 import './style/navbar.css'
 
 function Navbar(){
+
+    const li = document.querySelectorAll('.linkNav')
+
+    li.forEach(thumb =>{
+        thumb.addEventListener('click', function(){
+            const active = document.querySelector('.active')
+            active.classList.remove('active')
+            thumb.classList.add('active')
+        })
+    })
+
     return(
         <div className='containerNavBar'>
             <div className='containerImage'>
@@ -14,7 +25,7 @@ function Navbar(){
             <nav className='navBar'>
                 <ul>
                     <li>
-                        <Link className='linkNav' to = '/' >Inicio</Link>
+                        <Link className='linkNav active' to = '/' >Inicio</Link>
                     </li>
                     <li>
                         <Link className='linkNav' to = 'KhowUs' >Conocenos</Link>

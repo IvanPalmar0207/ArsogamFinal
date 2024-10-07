@@ -60,6 +60,10 @@
     background-color: rgb(60, 60, 59);
 }
 
+.active{
+    color:rgb(91, 184, 131);
+}
+
 .linkNav:hover{
     transition: all ease-in 0.3s;
     color:rgb(91, 184, 131);
