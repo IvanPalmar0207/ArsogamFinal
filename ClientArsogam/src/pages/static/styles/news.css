@@ -94,7 +94,15 @@
 @media (max-width:1900px) {
     .containerNewsSection{
         padding: 100px;
-        padding-top: 12%;
+        padding-top: 12%;        
+        background-size: contain;        
+        background-repeat: repeat;        
+        background-position: center;       
+    }
+
+    .bullNews img{
+        width: 15%;
+        height: auto;
     }
 }
 
@@ -145,7 +153,7 @@
     }
 
     .bullNews img{
-        width: 80%;
+        width: 60%;
     }
 
     .containerImageNews{

@@ -7,15 +7,18 @@ import './style/navbar.css'
 
 function Navbar(){
 
-    const li = document.querySelectorAll('.linkNav')
+    document.addEventListener('DOMContentLoaded',
+        function(){
+            const li = document.querySelectorAll('.linkNav')    
 
-    li.forEach(thumb =>{
-        thumb.addEventListener('click', function(){
-            const active = document.querySelector('.active')
-            active.classList.remove('active')
-            thumb.classList.add('active')
+            li.forEach(thumb =>{        
+                thumb.addEventListener('click', 
+                    function(){
+                        li.forEach(thumbItem => thumbItem.classList.remove('active'))                                                              
+                        thumb.classList.add('active')            
+                })
+            })
         })
-    })
 
     return(
         <div className='containerNavBar'>

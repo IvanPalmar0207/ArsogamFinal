@@ -53,10 +53,31 @@
     border-radius: 40px;
 }
 
+@media (max-width: 1800px) {
+    .containerPQRS{        
+        padding: 200px;
+        padding-top: 12%;
+        padding-bottom: 5%;
+        background-size: contain;        
+        background-repeat: repeat;        
+        background-position: center;       
+    }
+
+    .containerInfoPQRS{
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .containerPQRS{
+        background-image: url('../img/backgroundResponsive.jpeg');
+    }
+}
+
 @media (max-width:900px) {
     .containerPQRS{
-        padding: 10px;
-        padding-top: 30px;
+        padding: 15px;
+        padding-top: 50px;
         padding-bottom: 30px;
     }
 
@@ -67,6 +88,12 @@
     .containerInfoPQRS{
         flex-direction: column;
         padding: 50px;
+        padding-top: 10px;
+    }
+
+    .containerFormPqr{        
+        width: 100%;
+        margin-top: 0px;
     }
 
     .containerTextPQRS{

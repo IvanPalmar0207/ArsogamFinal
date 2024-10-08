@@ -43,7 +43,16 @@
 
 @media (max-width:1800px) {
     .sectionKhowUs{
-        padding-top: 15%;
+        padding-top: 12%;
+        background-image: url('../img/background.jpeg');
+        background-size: contain;        
+        background-repeat: repeat;        
+        background-position: center;
+    }
+}
+
+@media (max-width:1300px) {
+    .sectionKhowUs{
         background-image: url('../img/backgroundResponsive.jpeg');
     }
 }
@@ -54,7 +63,7 @@
     }
 
     .containerKhowUsLogo img{
-        width: 70%;
+        width: 60%;
     }
 
     .infoKhowUs{

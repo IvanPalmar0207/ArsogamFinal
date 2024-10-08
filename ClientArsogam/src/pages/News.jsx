@@ -3,7 +3,7 @@ import { useEffect } from "react";
 //Framer-motion
 import { motion } from "framer-motion";
 //Image
-import bullNews from './static/img/news/bullNews.svg'
+import bullNews from './static/img/news/bullNews.png'
 import imageNews from './static/img/news/imageNews.svg'
 //Styles
 import './static/styles/news.css'

@@ -1,7 +1,7 @@
 //React-hooks
 import { useEffect } from "react"
 //Bull Image
-import bullImage from './static/img/knowUs/bullKhow.svg'
+import bullImage from './static/img/knowUs/bullKnowUs.png'
 //Styles
 import './static/styles/KhowUs.css'
 //FramerMotion

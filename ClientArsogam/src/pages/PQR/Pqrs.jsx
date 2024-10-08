@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 //Styles
 import '../static/styles/pqrs.css'
 //Images
-import bullPqrs from '../static/img/pqrs/pqrsBull.svg'
+import bullPqrs from '../static/img/pqrs/pqrsBull.png'
 //Form PQR
 import FormPQR from "../../components/formPQR";
 

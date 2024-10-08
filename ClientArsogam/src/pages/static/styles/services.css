@@ -21,8 +21,7 @@
 }
 
 .containerImageServices img{
-    width: 259px;
-    height: 179px;
+    width: 20%;
 }
 
 .containerServices{
@@ -89,14 +88,28 @@
 
 @media (max-width:1800px) {
     .servicesSection{
-        padding-top: 15%;
-        background: url('../img/backgroundResponsive.jpeg');
+        padding-top: 12%;
+        background: url('../img/background.jpeg');
+        background-size: contain;        
+        background-repeat: repeat;        
+        background-position: center;    
+    }    
+
+    .containerImageServices img{
+        width: 13%;
+        height: auto;
+    }
+}
+
+@media (max-width:1300px) {
+    .servicesSection{
+        background-image: url('../img/backgroundResponsive.jpeg');
     }
 }
 
 @media (max-width:900px) {
     .containerImageServices img{
-        width: 75%;
+        width: 60%;
     }
     
     .servicesSection{

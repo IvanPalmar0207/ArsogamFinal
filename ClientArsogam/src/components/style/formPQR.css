@@ -73,7 +73,7 @@
 @media (max-width:900px) {
 
     .containerForm1{
-        width: 300px;
+        width: auto;
     }
 
     .containerForm1 h2{

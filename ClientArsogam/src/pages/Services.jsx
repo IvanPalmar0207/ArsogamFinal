@@ -1,7 +1,7 @@
 //React-hooks
 import { useEffect, useState } from "react";
 //Images
-import bullServices from './static/img/services/bullServices.svg'
+import bullServices from './static/img/services/bullServices.png'
 import training from './static/img/services/training.svg'
 import tecnicAssistance from './static/img/services/tecnicAssistance.svg'
 import arrowService from './static/img/services/arrowServices.svg'
@@ -15,7 +15,6 @@ import FormTecnicAssis from "../components/formTecnicAssis";
 import { IoMdClose } from "react-icons/io";
 //FramerMotion
 import {motion} from 'framer-motion'
-import { duration } from "@mui/material";
 
 function Services(){
         
