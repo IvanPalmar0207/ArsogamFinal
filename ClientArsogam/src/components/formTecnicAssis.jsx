@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form'
 //MaterialIU
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
-import Swal from 'sweetalert2'
 //Form Method
 import { postTecnicAssistance } from '../api/sendEmail';
 
@@ -21,7 +20,7 @@ function FormTecnicAssis(){
         const validData = {
             ...data
         }        
-        
+
         postTecnicAssistance(validData)        
         refreshPage()    
 

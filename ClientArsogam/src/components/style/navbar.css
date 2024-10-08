@@ -69,7 +69,17 @@
     color:rgb(91, 184, 131);
 }
 
-@media (max-width:1800px) {
+@media (max-width:2000px) {
+    .linkNav{
+        font-size: 1.6rem;
+    }
+
+    .navBar ul li{
+        margin-left: 20px;
+    }    
+}
+
+@media (max-width:1900px) {
     .navBar ul li{
         margin-left: 10px;
     }    

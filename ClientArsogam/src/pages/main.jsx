@@ -8,6 +8,8 @@ import CarouselHome from "../components/Slider"
 import imgFarm from './static/img/knowFarm.svg'
 //FramerMotion
 import { motion } from "framer-motion"
+//React Navigation
+import { Link } from "react-router-dom"
 
 function Home(){
 
@@ -34,7 +36,16 @@ function Home(){
                     DE GANADEROS EN LA AMAZONIA    
                 </h3>
                 <div className="imageFarm">
-                    <img className="subtitleImage" src={imgFarm} alt="farmImage" />
+                    <motion.div
+                        whileHover={{
+                            scale : 1.1,
+                            cursor : "pointer"
+                        }}
+                    >
+                        <Link to='InfoArso'>
+                            <img className="subtitleImage" src={imgFarm} alt="farmImage" />
+                        </Link>
+                    </motion.div>
                 </div>                
             </div>
             <div className="containerCarrousel">

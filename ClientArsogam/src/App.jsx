@@ -12,6 +12,8 @@ import Events from './pages/Events';
 import News from './pages/News';
 //PQR Page
 import Pqrs from './pages/PQR/Pqrs';
+//Info Arsofam
+import InfoArso from './pages/InfoArso';
 //Components
 import Navbar from './components/navbar';
 
@@ -27,7 +29,8 @@ function App() {
                 <Route path = 'Events' element = {<Events />} />
                 <Route path = 'News' element = {<News />} />
                 <Route path = 'PQRS' element = {<Pqrs />} />
-                <Route path = '*' element = {<h1>Not Found</h1>} />
+                <Route path = 'InfoArso' element = {<InfoArso />}/>
+                <Route path = '*' element = {<h1>Not Found</h1>} />            
             </Routes>        
         </BrowserRouter>
     )
