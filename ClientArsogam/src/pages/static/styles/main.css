@@ -40,12 +40,16 @@
 }
 
 .imageFarm{
-    text-align: start;
-    margin-top: 90px;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    padding-left: 140px;
+
 }
 
 .subtitleImage{
-    width: 90%;
+    width: 110%;
+    height: 250px;
 }
 
 .containerCarrousel{
@@ -126,6 +130,13 @@
 
     .imageFarm{
         margin-top: 10%;
+        padding: 50px;        
+        width: 100%;
+    }
+
+    .subtitleImage{
+        width: 140%;
+        height: auto;
     }
 
 }

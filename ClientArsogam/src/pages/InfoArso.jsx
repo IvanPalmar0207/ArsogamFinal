@@ -159,21 +159,21 @@ function InfoArso(){
                 <div className='containerModals'>
 
                     <div className='imageModal' onClick={toggleModal1}>                        
-                        {isModalOpen1 && <Modal text= {modalVision} onRequestClose={toggleModal1}/>}
+                        {isModalOpen1 && <Modal text= {modalVision()} onRequestClose={toggleModal1}/>}
                         <img src={visionImage} alt="Info Image" />
                         <h2>    
                             Visión
                         </h2>
                     </div>
                     <div className='imageModal' onClick={toggleModal2}>
-                        {isModalOpen2 && <Modal text={modalValues} onRequestClose={toggleModal2}/>}
+                        {isModalOpen2 && <Modal text={modalValues()} onRequestClose={toggleModal2}/>}
                         <img src={valuesImage} alt="Info Image" />
                         <h2>    
                             Valores
                         </h2>
                     </div>
                     <div className='imageModal' onClick={toggleModal3}>
-                        {isModalOpen3 && <Modal text={modalPolitics} onRequestClose={toggleModal3} />}
+                        {isModalOpen3 && <Modal text={modalPolitics()} onRequestClose={toggleModal3} />}
                         <img src={politicsImage} alt="Info Image" />
                         <h2>
                             Políticas

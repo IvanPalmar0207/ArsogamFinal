@@ -36,7 +36,7 @@ function Services(){
                         damping : 90
                     }}
                 >
-                    <img src = {bullServices} alt = "bullServices" onClick={toggleModal}/>
+                    <img src = {bullServices} alt = "bullServices"/>
                 </motion.div>
             </div>
 
@@ -58,7 +58,7 @@ function Services(){
                     </div>
                     <h2>
                         Asistencia Tecnica
-                    </h2>
+                    </h2>                    
                     <div className="arrowServ">
                         <motion.div
                             initial = {{
@@ -92,7 +92,7 @@ function Services(){
                         }}
                         whileHover={{scale : 0.8}}
                     >
-                        <img src={training} alt="trainingSessions" className="imgNro2Ser"/>
+                        <img src={training} alt="trainingSessions" className="imgNro2Ser" onClick={toggleModal}/>
                     </motion.div>
                     <h2>
                         Capacitaciones

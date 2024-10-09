@@ -14,11 +14,11 @@ const emailHelper = async (email, fullName, phone, request) => {
         }
     })
     
-    let emailStructure = `Bienvenido al apartado de asistencia tecnica, el tema de solicitud es:\n\nNombre Completo: ${fullName}\nNumero de Celular: ${phone}\n\nSolicitud: \n\n${request} \n\n\nEste es un formato de Asistencia Técnica, por favor responde al correo para aclarar la situacion en la que se encuetra el usuario.\n\nGracias y buen dia desde el departamento de Asistencia Técnica.`
+    let emailStructure = `Bienvenido al apartado de asistencia tecnica y capacitaciones, el tema de solicitud es:\n\nNombre Completo: ${fullName}\nNumero de Celular: ${phone}\n\nSolicitud: \n\n${request} \n\n\nEste es un formato de Asistencia Técnica Y Capacitaciones, por favor responde al correo para aclarar la situacion en la que se encuetra el usuario.\n\nGracias y buen dia desde el departamento de Asistencia Técnica y Capacitaciones.`
 
     let mailOptions = {
-        from: 'Tecnic Assitance <palmar.ivan0205@gmail.com>',
-        subject : `Asistencia Tecnica - ${fullName}`,
+        from: 'Asistencia Tecnica y Capacitaciones <palmar.ivan0205@gmail.com>',
+        subject : `Asistencia Tecnica y Capacitaciones - ${fullName}`,
         text : emailStructure,
         to : process.env.EMAIL_USER,
         replyTo : email
