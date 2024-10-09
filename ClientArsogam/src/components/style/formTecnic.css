@@ -10,6 +10,30 @@
     padding: 10px;
 }
 
+.containerModalInfoForm{    
+    border-radius: 10px;
+    border: 2px solid white;        
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;    
+}
+
+.containerMainModalForm{
+    background: rgb(91, 184, 131);
+	border-radius: 20px;	
+	margin: 50px auto;	
+	width: 30%;
+    box-shadow: 4px 4px 4px 4px rgb(199, 199, 199);
+}
+
+.containerForm{
+    padding: 20px;
+}
+
 .containerForm h2{
     width: 100%;
     font-family: "Bella";

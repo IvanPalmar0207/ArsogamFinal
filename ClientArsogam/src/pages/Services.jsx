@@ -7,14 +7,10 @@ import tecnicAssistance from './static/img/services/tecnicAssistance.svg'
 import arrowService from './static/img/services/arrowServices.svg'
 //Styles
 import './static/styles/services.css'
-//Material IU
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import FormTecnicAssis from "../components/formTecnicAssis";
-//Icons
-import { IoMdClose } from "react-icons/io";
 //FramerMotion
 import {motion} from 'framer-motion'
+//Modals
+import FormTecnicAssis from '../components/formTecnicAssis'
 
 function Services(){
         
@@ -22,18 +18,15 @@ function Services(){
         document.title = "Servicios"
     })
 
-    const [open, setOpen] = useState(false);
+    const [isModalOpen, setModalOpen] = useState(false)
 
-    const handleOpen = () => {
-        setOpen(true);
-    }
-    const handleClose = () => {
-        setOpen(false);
+    const toggleModal = () => {
+        setModalOpen(!isModalOpen)
     }
 
     return(
         <section className="servicesSection" id="sectionService">
-            <div className="containerImageServices">
+            <div className="containerImageServices">                
                 <motion.div
                     initial = {{scale : 0}}
                     animate = {{rotate : 360, scale : 1}}
@@ -43,32 +36,15 @@ function Services(){
                         damping : 90
                     }}
                 >
-                    <img src = {bullServices} alt = "bullServices" />
+                    <img src = {bullServices} alt = "bullServices" onClick={toggleModal}/>
                 </motion.div>
             </div>
 
             <div className="containerServices">
                 <div className="containerInfoService tecnicAssitance">                                
-                    <div>
-                        <Modal
-                            open={open}
-                            onClose={handleClose}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                        >
-                            <Box className = "containerModal">
-                                <div className="containerIcon">
-                                    <IoMdClose
-                                        className="iconModal"
-                                        onClick={handleClose}
-                                    />
-                                </div>
-                                <FormTecnicAssis />                                
-                            </Box>
-                        </Modal>
-                    </div>
-                    <div>
-                        <motion.div className="motionImage"
+                {isModalOpen && <FormTecnicAssis onRequestClose = {toggleModal}/>}                                                                                
+                <div>                
+                    <motion.div className="motionImage"
                             style={{
                                 width: '100%',
                                 height: '100%',
@@ -76,9 +52,9 @@ function Services(){
                                 cursor : "pointer"
                             }}
                             whileHover={{ scale: 0.8 }}
-                        >
-                            <img src={tecnicAssistance} alt="tecnicAssitance" onClick={handleOpen}/>                        
-                        </motion.div>
+                    >                        
+                        <img src={tecnicAssistance} alt="tecnicAssitance" onClick={toggleModal}/>                        
+                    </motion.div>
                     </div>
                     <h2>
                         Asistencia Tecnica
