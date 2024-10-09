@@ -76,7 +76,7 @@
 
 @media (max-width:900px) {
     .containerPQRS{
-        padding: 15px;
+        padding: 0px;
         padding-top: 50px;
         padding-bottom: 30px;
     }

@@ -1,5 +1,5 @@
 //React-hooks
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 //Styles
 import './static/styles/events.css'
 //Images
@@ -32,13 +32,26 @@ function Events(){
 
     let withScreen;
 
-    function withScreenFun () 
-    {   
-        if(window.screen.width < 900){
-            return withScreen = 900
-        }
+    //Slides Logic
+    const [slides, setSlides] = useState(0)
+    
+    const setSlidesPerView = () => {
+        setSlides(
+            window.innerWidth <= 550 ? 'auto'
+            : window.innerWidth <= 720 ? 2
+            : window.innerWidth > 900 ? 2 : 0        
+        )
     }
 
+    useEffect(() => {
+        setSlidesPerView()
+
+        window.addEventListener('resize', setSlidesPerView)
+
+        return() => {
+            window.removeEventListener('resize', setSlidesPerView)
+        }
+    })
 
     return (
         <section className="sectionEvents">
@@ -58,16 +71,16 @@ function Events(){
             <div className="containerSwiper">
                 <Swiper
                     effect={'coverflow'}
-                    grabCursor={false}
+                    grabCursor={true}
                     centeredSlides={true}
                     loop={true}
-                    slidesPerView={withScreenFun < 900 ? 'auto' : 2}
+                    slidesPerView={slides}                    
                     coverflowEffect={{
                         rotate: 0,
                         stretch: 10,
                         depth: 150,
                         modifier: 2.5,
-                    }}
+                    }}                    
                     pagination={{ el: '.swiper-pagination', clickable: true }}
                     navigation={{
                     nextEl: '.swiper-button-next',

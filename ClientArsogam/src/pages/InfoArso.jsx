@@ -62,6 +62,27 @@ function InfoArso(){
         setModalOpen3(!isModalOpen3)
     }
 
+    //Slides Per Views
+    const [slides, setSlides] = useState(0)
+
+    const setSlidesPerView = () => {
+        setSlides(
+            window.innerWidth <= 520 ? 'auto' :
+            window.innerWidth <= 720 ? 2 : 
+            window.innerWidth > 900 ? 2 : 0
+        )
+    }
+
+    useEffect(() => {
+        setSlidesPerView()
+
+        window.addEventListener('resize', setSlidesPerView)
+
+        return() => {
+            window.removeEventListener('resize', setSlidesPerView)
+        }
+    })
+
     return (
         <section className='sectionInfoArso'>
             <div className='containerInfoLogo'>
@@ -81,10 +102,10 @@ function InfoArso(){
             <div className="containerSwiper1">
                 <Swiper
                     effect={'coverflow'}
-                    grabCursor={false}
+                    grabCursor={true}
                     centeredSlides={true}
                     loop={true}
-                    slidesPerView={withScreenFun < 900 ? 'auto' : 2}
+                    slidesPerView={slides}
                     coverflowEffect={{
                         rotate: 0,
                         stretch: 40,
@@ -100,7 +121,7 @@ function InfoArso(){
                     modules={[EffectCoverflow, Pagination, Navigation]}
                     className="swiper_container1"
                 >
-                    <SwiperSlide>
+                    <SwiperSlide className='swiperSlide'>
                         <img className='imgSwiper' src={imageArso} alt="slide_image" />
                     </SwiperSlide>
                     <SwiperSlide>

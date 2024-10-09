@@ -108,8 +108,8 @@ const FormTecnicAssis = ({onRequestClose}) =>{
                         }
 
                         <div className='containerButtonSubmit'>
-                            <Button type='submit' variant="contained">Enviar</Button>
-                            <Button onClick={onRequestClose}>Cerrar</Button>
+                            <Button type='submit' variant="contained" className='confirmButton'>Enviar</Button>
+                            <Button onClick={onRequestClose} className='closeButton' variant='contained'>Cerrar</Button>
                         </div>
                     </form>
                 </div>
