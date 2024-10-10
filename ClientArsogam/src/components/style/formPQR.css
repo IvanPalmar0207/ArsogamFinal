@@ -44,6 +44,7 @@
 
 .formTecnic1 textarea{
     height: 120px;
+    resize: none;
 }
 
 .formTecnic1 select{

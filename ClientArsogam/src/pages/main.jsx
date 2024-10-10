@@ -31,9 +31,9 @@ function Home(){
                     </motion.div>
                 </div>
                 <h3 className="subtitleMain">
-                    ASOCIASION REGENERATIVA Y SOSTENIBLE
+                    ASOCIACIÓN REGENERATIVA Y SOSTENIBLE
                     <br />
-                    DE GANADEROS EN LA AMAZONIA    
+                    DE GANADEROS EN LA AMAZONIA
                 </h3>
                 <div className="imageFarm">
                     <motion.div

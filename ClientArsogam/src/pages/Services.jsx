@@ -57,7 +57,7 @@ function Services(){
                     </motion.div>
                     </div>
                     <h2>
-                        Asistencia Tecnica
+                        Asistencia Técnica
                     </h2>                    
                     <div className="arrowServ">
                         <motion.div
