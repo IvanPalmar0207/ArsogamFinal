@@ -7,6 +7,8 @@ import bullNews from './static/img/news/bullNews.png'
 import imageNews from './static/img/news/imageNews.svg'
 //Styles
 import './static/styles/news.css'
+//Components
+import { ContactFloat } from "../components/contactFloat";
 
 function News(){
 
@@ -16,6 +18,7 @@ function News(){
 
     return(
         <section className="containerNewsSection">
+            <ContactFloat />
             <div className="bullNews">
                 <motion.div
                     initial = {{scale : 0}}
@@ -34,7 +37,7 @@ function News(){
                 <h4>
                 IMPUESTO A GASES DE VACAS: 
                 <br />
-                UNA RESPUESTA CLIMÁTICA CON RIESGOS PARA LA GANADERÍA 
+                UNA RESPUESTA CLIM<span className="tildesFont">Á</span>TICA CON RIESGOS PARA LA GANADER<span className="tildesFont">Í</span>A 
                 </h4>
             </div>
 

@@ -34,7 +34,11 @@
     position: relative;
     text-align: center;
   }
-  
+
+.linkNone{
+    text-decoration: none;
+}
+
 .swiper-slide {
     width: 20rem;
     height: 40rem;

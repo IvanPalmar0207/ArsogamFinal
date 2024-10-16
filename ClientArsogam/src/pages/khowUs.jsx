@@ -6,6 +6,8 @@ import bullImage from './static/img/knowUs/bullKnowUs.png'
 import './static/styles/KhowUs.css'
 //FramerMotion
 import {motion} from 'framer-motion'
+//components
+import { ContactFloat } from "../components/contactFloat"
 
 function KhowUs(){
 
@@ -14,7 +16,8 @@ function KhowUs(){
     })
 
     return(
-        <section className="sectionKhowUs">
+        <section className="sectionKhowUs">       
+            <ContactFloat />
             <div className="containerKhowUsLogo">
                 <motion.div
                     initial = {{scale : 0}}                
@@ -30,7 +33,7 @@ function KhowUs(){
             </div>
             <div className="infoKhowUs">
                 <h2>
-                    ¿Qué es Arsogam?
+                    ¿Qu<span className="tildesFont">é</span> es Arsogam?
                 </h2>
                 <p>
                     La Asociación Regenerativa y Sostenible de GANADEROS en la AMAZONIA ARSOGAM, 
@@ -57,7 +60,7 @@ function KhowUs(){
             </div>
             <div className="infoKhowUs">
                 <h2>
-                    Misión
+                    Misi<span className="tildesFont">ó</span>n
                 </h2>
                 <p>
                     Trabajar, promover y difundir la ganadería regenerativa, protegiendo el medio ambiente y la biodiversidad,
@@ -66,7 +69,7 @@ function KhowUs(){
             </div>
             <div className="infoKhowUs">
                 <h2>
-                    Visión
+                    Visi<span className="tildesFont">ó</span>n
                 </h2>
                 <p>
                     "Seremos una asociación comprometida con la actividad ganadera, actuando como agentes de 

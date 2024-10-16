@@ -31,7 +31,7 @@ function Home(){
                     </motion.div>
                 </div>
                 <h3 className="subtitleMain">
-                    ASOCIACIÓN REGENERATIVA Y SOSTENIBLE
+                    ASOCIACI<span className="tildesFont">Ó</span>N REGENERATIVA Y SOSTENIBLE
                     <br />
                     DE GANADEROS EN LA AMAZONIA
                 </h3>

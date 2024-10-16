@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 import '../static/styles/pqrs.css'
 //Images
 import bullPqrs from '../static/img/pqrs/pqrsBull.png'
-//Form PQR
+//Components
 import FormPQR from "../../components/formPQR";
+import { ContactFloat } from "../../components/contactFloat";
 
 function Pqrs(){
 
@@ -17,7 +18,7 @@ function Pqrs(){
 
     return(
         <section className="containerPQRS">
-
+            <ContactFloat />
             <div className="containerBullPqrs">
                 <motion.div
                     initial = {{scale : 0}}                  

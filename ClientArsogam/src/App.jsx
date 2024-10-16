@@ -14,6 +14,8 @@ import News from './pages/News';
 import Pqrs from './pages/PQR/Pqrs';
 //Info Arsofam
 import InfoArso from './pages/InfoArso';
+//Gallery
+import { GalleryArso } from './pages/gallery';
 //Components
 import Navbar from './components/navbar';
 
@@ -30,6 +32,7 @@ function App() {
                 <Route path = 'News' element = {<News />} />
                 <Route path = 'PQRS' element = {<Pqrs />} />
                 <Route path = 'InfoArso' element = {<InfoArso />}/>
+                <Route path = '/GalleryArso' element = {<GalleryArso />}/>
                 <Route path = '*' element = {<h1>Not Found</h1>} />            
             </Routes>        
         </BrowserRouter>

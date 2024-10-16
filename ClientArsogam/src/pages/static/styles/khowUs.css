@@ -6,6 +6,8 @@
     src: url('../fonts/Bella.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 .sectionKhowUs{
     background-image: url('../img/background.jpeg');
     background-repeat: repeat;
@@ -32,6 +34,12 @@
     font-family: "Bella";
     font-weight: bold;
     font-size: 2.2rem;
+}
+
+.tildesFont{
+    font-family: "Libre Baskerville", serif;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .infoKhowUs p{

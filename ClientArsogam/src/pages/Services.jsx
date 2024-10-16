@@ -9,8 +9,9 @@ import arrowService from './static/img/services/arrowServices.svg'
 import './static/styles/services.css'
 //FramerMotion
 import {motion} from 'framer-motion'
-//Modals
+//Components
 import FormTecnicAssis from '../components/formTecnicAssis'
+import { ContactFloat } from "../components/contactFloat";
 
 function Services(){
         
@@ -26,6 +27,7 @@ function Services(){
 
     return(
         <section className="servicesSection" id="sectionService">
+            <ContactFloat />
             <div className="containerImageServices">                
                 <motion.div
                     initial = {{scale : 0}}
@@ -57,7 +59,7 @@ function Services(){
                     </motion.div>
                     </div>
                     <h2>
-                        Asistencia Técnica
+                        Asistencia T<span className="tildesFont">é</span>cnica
                     </h2>                    
                     <div className="arrowServ">
                         <motion.div

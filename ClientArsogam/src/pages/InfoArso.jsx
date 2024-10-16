@@ -1,5 +1,6 @@
 //React Hooks
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 //Styles
 import './static/styles/infoArso.css'
 //Framer Motion
@@ -10,6 +11,7 @@ import imageArso from './static/img/infoArso/imgInfoArso.svg'
 import visionImage from './static/img/infoArso/visionImage.svg'
 import valuesImage from './static/img/infoArso/valuesImage.svg'
 import politicsImage from './static/img/infoArso/politicsImage.svg'
+import galleryIcon from './static/img/infoArso/galleryIcon.svg'
 //Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
@@ -23,6 +25,8 @@ import Modal from '../components/ModalInfo'
 import { modalVision } from '../components/modalText'
 import { modalValues } from '../components/modalText'
 import { modalPolitics } from '../components/modalText'
+//Components
+import { ContactFloat } from '../components/contactFloat'
 
 function InfoArso(){
 
@@ -31,15 +35,6 @@ function InfoArso(){
     useEffect(() => {
         document.title = 'Ganaderia Regenerativa'
     })
-
-    let withScreen;
-
-    function withScreenFun () 
-    {   
-        if(window.screen.width < 900){
-            return withScreen = 900
-        }
-    }
     
     //Vision Modal
     const [isModalOpen1, setModalOpen1] = useState(false)
@@ -85,6 +80,7 @@ function InfoArso(){
 
     return (
         <section className='sectionInfoArso'>
+            <ContactFloat />
             <div className='containerInfoLogo'>
                 <motion.div
                     initial = {{scale : 0}}
@@ -149,10 +145,10 @@ function InfoArso(){
             <div className='containerTextInfo'>
                 <div className='containerInfoP'>
                     <p>
-                        Somos una ganadería regenerativa dedicada a la explotación
+                        Somos una ganader<span className='tildesFont'>í</span>a regenerativa dedicada a la explotaci<span className='tildesFont'>ó</span>n
                         de machos de CEBA, implementando el sistema de pastoreo PUAD
                         (pastoreo de ultra alta densidad), restaurando servicios 
-                        ecosistémicos, protegiendo fuentes de agua, flora, fauna y 
+                        ecosist<span className='tildesFont'>é</span>micos, protegiendo fuentes de agua, flora, fauna y 
                         especies nativas en la Amazonia. 
                     </p>
                 </div>
@@ -162,7 +158,7 @@ function InfoArso(){
                         {isModalOpen1 && <Modal text= {modalVision()} onRequestClose={toggleModal1}/>}
                         <img src={visionImage} alt="Info Image" />
                         <h2>    
-                            Visión
+                            Visi<span className='tildesFont'>ó</span>n
                         </h2>
                     </div>
                     <div className='imageModal' onClick={toggleModal2}>
@@ -176,8 +172,16 @@ function InfoArso(){
                         {isModalOpen3 && <Modal text={modalPolitics()} onRequestClose={toggleModal3} />}
                         <img src={politicsImage} alt="Info Image" />
                         <h2>
-                            Políticas
+                            Pol<span className='tildesFont'>í</span>ticas
                         </h2>
+                    </div>
+                    <div className='imageModal'>                    
+                        <Link to='/GalleryArso' className='linkNone'>
+                            <img src={galleryIcon} alt="Info Image" />
+                            <h2>
+                                Galer<span className='tildesFont'>í</span>a
+                            </h2>
+                        </Link>
                     </div>
                 </div>
             </div>
