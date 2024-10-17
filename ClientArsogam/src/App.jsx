@@ -18,12 +18,14 @@ import InfoArso from './pages/InfoArso';
 import { GalleryArso } from './pages/gallery';
 //Components
 import Navbar from './components/navbar';
+import { ScrollTop } from './components/scrollTop';
 
 function App() {
 
     return (        
         <BrowserRouter>
         <Navbar />        
+        <ScrollTop />
             <Routes>
                 <Route path = '/' element = {<Home />}/>
                 <Route path = 'KhowUs' element = {<KhowUs />}/>

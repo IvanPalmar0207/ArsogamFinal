@@ -19,8 +19,6 @@ import { motion } from "framer-motion"
 //Components
 import { ContactFloat } from "../components/contactFloat"
 import { GalleryComponent } from '../components/galleryComponent'
-import { useState } from 'react'
-import ModalImg from '../components/ModalImg'
 
 export function GalleryArso(){
 
@@ -87,12 +85,6 @@ export function GalleryArso(){
         }
     ]
 
-    const [isModalOpen, setModalOpen] = useState(false)
-
-    const toggleModal = () => {
-        setModalOpen(!isModalOpen)
-    }
-
     return(
         <section className="sectionGallery">
             <ContactFloat />
@@ -114,17 +106,12 @@ export function GalleryArso(){
             <div className='containerGallery'>
                     {
                         galleryList.map((gallery) => {
-                            return(
-                                <>                                
-                                <div onClick={toggleModal}>                                
-                                {isModalOpen && <ModalImg key={gallery.id} img={gallery.url} onRequestClose={toggleModal}/>}
+                            return(                               
                                 <GalleryComponent 
                                         key={gallery.id}
                                         url={gallery.url}
                                         alt={gallery.alt}                                    
-                                    />   
-                                </div>                             
-                                </>
+                                />                               
                             )
                         })
                     }

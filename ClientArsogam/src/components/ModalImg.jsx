@@ -1,4 +1,9 @@
+//React-hooks
 import { useEffect } from "react"
+//Styles
+import './style/modalImg.css'
+//Icons
+import { IoMdClose } from "react-icons/io";
 
 const ModalImg = ({onRequestClose, img}) => {
     useEffect(() => {
@@ -22,16 +27,15 @@ const ModalImg = ({onRequestClose, img}) => {
 
     return(
         <div className="containerModalImg">
-        <div className="containerMainImg">                    
+        <div className="containerMainImg">                 
             <div className="containerModalImg">
-                <img src={img} alt="imgModal" />
-            </div>
-
-            <div className="containerButtonCloseImg">
-                <button className="buttonModalInf" type="button" onClick={onRequestClose}>
-                    CERRAR
-                </button>
-            </div>
+                <div className="iconModalImg">
+                    <IoMdClose className="iconCloseImg"/>
+                </div>       
+                <div className="containerImgModal">
+                    <img src={img} alt="imgModal" />
+                </div>                        
+            </div>            
         </div>
     </div>
     )

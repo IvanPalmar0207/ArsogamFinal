@@ -53,3 +53,20 @@
     transform: scale(1.15);
     cursor: pointer;
 }
+
+@media (max-width : 900px) {
+    .sectionGallery{
+        padding: 50px;
+    }
+
+    .containerGalleryLogo img{
+        width: auto;
+    }
+
+    .containerGallery{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+        margin-top: 80px;
+    }
+
+}

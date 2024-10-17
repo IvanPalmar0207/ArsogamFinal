@@ -56,7 +56,7 @@
     width: 50%;
     height: 100%;
     background-image: url('../img/background.jpeg');
-    padding-top: 5.8%;
+    padding-top: 5.4%;
 }
 
 @media (max-width:1800px) {
@@ -64,10 +64,16 @@
         padding-top: 20%;
     }
     .containerCarrousel{
-        padding-top: 10.5%;
+        padding-top: 5.7%;
     }
     .titleMain{
         font-size: 5rem;
+    }
+}
+
+@media (max-width : 1650px) {
+    .containerCarrousel{
+        padding-top: 6%;
     }
 }
 
@@ -76,31 +82,39 @@
         padding-top: 30%;
     }
     .containerCarrousel{
-        padding-top: 12%;
+        padding-top: 7%;
+    }
+}
+
+@media (max-width : 1500px) {
+    .containerCarrousel{
+        padding-top: 10%;
     }
 }
 
 @media (max-width:1400px) {
     .containerCarrousel{
-        padding-top: 14%;
+        padding-top: 11%;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:1250px) {    
+    
     .subtitleMain{
-        font-size: 1.2rem;
-    }
+        font-size: 1.5rem;
+    }    
 
     .containerCarrousel{
-        padding: 0%;
+        padding-top: 13%;
     }
+
     .titleMain{
-        font-size: 3rem;
+        font-size: 5rem;
     }
     
 }
 
-@media (max-width:900px) {
+@media (max-width:1190px) {
 
     .titleMain{
         font-size: 3.5rem;
