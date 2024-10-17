@@ -28,6 +28,7 @@ export function modalValues (){
             <br />
             <br />
             <span>•Transparencia: </span>
+            <br />
             Practicar una comunicación abierta y honesta con los clientes, colaboradores y otras partes interesadas.
             <br />
             <br />
