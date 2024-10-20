@@ -86,6 +86,15 @@
     }
 }
 
+@media (max-width: 1550px) {
+    .containerInfoHome{
+        padding-top: 25%;
+    }
+    .containerCarrousel{
+        padding-top: 6%;
+    }
+}
+
 @media (max-width : 1500px) {
     .containerCarrousel{
         padding-top: 10%;
